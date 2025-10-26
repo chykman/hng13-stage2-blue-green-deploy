@@ -46,7 +46,7 @@ services:
     image: nginx:alpine
     container_name: nginx_proxy
     ports:
-      - "8080:80"  # Public endpoint
+      - "80:80"  # Public endpoint
     volumes:
       - ./nginx/nginx.conf.template:/etc/nginx/nginx.conf.template:ro
       - ./nginx/entrypoint.sh:/entrypoint.sh:ro
